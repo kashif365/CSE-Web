@@ -1,14 +1,39 @@
-const path = require("path");
 const express = require("express");
+const path = require("path");
+const expressLayouts = require("express-ejs-layouts");
+const { title } = require("process");
+
 const app = express();
 
-// Correct static folder path
-const frontendPath = path.join(__dirname, "public"); // if public is in backend folder
-app.use(express.static(frontendPath));
+// view engine
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(frontendPath, "index.html"));
-});
+app.use(expressLayouts);
+app.set("layout", "layouts/main");
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// static assets
+app.use(express.static(path.join(__dirname, "public")));
+
+
+// routes
+app.get("/", (req, res) => {res.render("pages/home", { title: "SCE-DUET" });});
+app.get('/about', (req, res) => {res.render('pages/about', { title: 'About Us' });});
+app.get('/event', (req, res) => {res.render('pages/event', { title: 'Event' });});
+app.get('/speaker', (req, res) => {res.render('pages/speaker', { title: 'Speaker' });});
+app.get('/blog', (req, res)=>{res.render('pages/blog', {title: 'Blog'});});
+app.get('/contact', (req, res) => {res.render('pages/contact', { title: 'Contact' });});
+app.get('/gallary', (req, res) => {res.render('pages/gallary', { title: 'Gallary' });});
+
+
+
+
+
+
+
+
+
+
+
+//server
+app.listen(3000, () => {  console.log("Server running on port 3000");});

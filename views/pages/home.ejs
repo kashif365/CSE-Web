@@ -1,0 +1,3573 @@
+<style>
+  .insta-stack {
+    width: 100%;
+    max-width: 500px;
+    height: 420px;
+  }
+
+  /* common image style */
+  .insta-img {
+    position: absolute;
+    width: 75%;
+    border-radius: 40px 0 40px 0;
+    object-fit: cover;
+    transition: all 0.4s ease;
+  }
+
+  /* center image (front) */
+  .insta-center {
+    z-index: 3;
+    transform: scale(1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  }
+
+  /* left image (behind) */
+  .insta-left {
+    z-index: 1;
+    transform: translateX(-60px) rotate(-6deg) scale(0.92);
+    opacity: 0.7;
+  }
+
+  /* right image (behind) */
+  .insta-right {
+    z-index: 2;
+    transform: translateX(60px) rotate(6deg) scale(0.92);
+    opacity: 0.7;
+  }
+  .insta-stack:hover .insta-left {
+    transform: translateX(-80px) rotate(-8deg) scale(0.9);
+  }
+
+  .insta-stack:hover .insta-right {
+    transform: translateX(80px) rotate(8deg) scale(0.9);
+  }
+
+  .insta-stack:hover .insta-center {
+    transform: scale(1.03);
+  }
+  .speaker-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sp_img {
+    height: 420px; /* FIXED image area height */
+    overflow: hidden;
+  }
+
+  .sp_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crops image nicely */
+  }
+
+  .sp_img.speaker-info {
+    flex-grow: 1; /* equal bottom space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+</style>
+
+<div class="main-slider-wrapper gray-300">
+  <!-- ===============  hero area start  =============== -->
+  <div class="hero-area">
+    <div class="hero-shape">
+      <img src="assets/images/shapes/hero-shape.png" alt="" />
+    </div>
+
+    <div class="container">
+      <div class="swiper-container hero-slider overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- vertial section 01-->
+          <div class="swiper-slide">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="slide-content">
+                  <h5>
+                    <i class="bi bi-calendar2-week"></i> December 17, 2025
+                  </h5>
+                  <h2>Gen Z AI Mastery <br /><span>SEMINAR</span></h2>
+
+                  <ul class="featured-event">
+                    <li>Speaker <span>FARAZ HUSSAIN BURIRO</span></li>
+                    <!-- <li>
+                      <i class="bi bi-diagram-3"></i> <span>500</span> Seat
+                    </li> -->
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam eaque, fugit sint ducimus eum aut possimus natus
+                      expedita eveniet ratione inventore incidunt nostrum
+                      accusamus quas illo adipisci quibusdam? Sapiente, nobis.
+                    </li>
+                  </ul>
+
+                  <div class="slider-btns">
+                    <a href="/gallary" class="primary-btn-fill"
+                      >View Gallary</a
+                    >
+                    <!-- <a href="/gallary" class="primary-btn-outline"
+                      >View Gallery</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <!-- vertial section -->
+              <div class="col-lg-6 text-center">
+                <div
+                  class="slide-figure position-relative d-flex justify-content-center align-items-center insta-stack"
+                >
+                  <!-- Left image (behind) -->
+                  <img
+                    src="assets/images/hero/gen-z (4).jpeg"
+                    class="img-fluid insta-img insta-left d-none d-md-block"
+                    alt=""
+                  />
+
+                  <!-- Right image (behind) -->
+                  <img
+                    src="assets/images/hero/gen-z (3).jpeg"
+                    class="img-fluid insta-img insta-right d-none d-md-block"
+                    alt=""
+                  />
+
+                  <!-- Center image (front) -->
+                  <img
+                    src="assets/images/hero/gen-z (1).jpeg"
+                    class="img-fluid insta-img insta-center"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- horizontal section 02 -->
+          <div class="swiper-slide">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="slide-content">
+                  <h5>
+                    <i class="bi bi-calendar2-week"></i> December 17, 2025
+                  </h5>
+                  <h2>Gen Z AI Mastery <br /><span>SEMINAR</span></h2>
+
+                  <ul class="featured-event">
+                    <li>Speaker <span>FARAZ HUSSAIN BURIRO</span></li>
+                    <!-- <li>
+                      <i class="bi bi-diagram-3"></i> <span>500</span> Seat
+                    </li> -->
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam eaque, fugit sint ducimus eum aut possimus natus
+                      expedita eveniet ratione inventore incidunt nostrum
+                      accusamus quas illo adipisci quibusdam? Sapiente, nobis.
+                    </li>
+                  </ul>
+
+                     <div class="slider-btns">
+                    <a href="/gallary" class="primary-btn-fill"
+                      >View Gallary</a
+                    >
+                    <!-- <a href="/gallary" class="primary-btn-outline"
+                      >View Gallery</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <div
+                  class="slide-figure position-relative d-lg-flex justify-content-center"
+                >
+                  <img
+                    src="assets/images/hero/gen-z (7).jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+
+                  <div class="animated-shape">
+                    <img src="assets/images/shapes/hero-animi.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- vertial section 03 -->
+          <div class="swiper-slide">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="slide-content">
+                  <h5>
+                    <i class="bi bi-calendar2-week"></i> December 17, 2025
+                  </h5>
+                  <h2>Gen Z AI Mastery <br /><span>SEMINAR</span></h2>
+
+                  <ul class="featured-event">
+                    <li>Speaker <span>FARAZ HUSSAIN BURIRO</span></li>
+                    <!-- <li>
+                      <i class="bi bi-diagram-3"></i> <span>500</span> Seat
+                    </li> -->
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam eaque, fugit sint ducimus eum aut possimus natus
+                      expedita eveniet ratione inventore incidunt nostrum
+                      accusamus quas illo adipisci quibusdam? Sapiente, nobis.
+                    </li>
+                  </ul>
+
+                     <div class="slider-btns">
+                    <a href="/gallary" class="primary-btn-fill"
+                      >View Gallary</a
+                    >
+                    <!-- <a href="/gallary" class="primary-btn-outline"
+                      >View Gallery</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <!-- vertial section -->
+              <div class="col-lg-6 text-center">
+                <div
+                  class="slide-figure position-relative d-flex justify-content-center align-items-center insta-stack"
+                >
+                  <!-- Left image (behind) -->
+                  <img
+                    src="assets/images/hero/WhatsApp Image 2025-12-17 at 11.13.06 PM.jpeg"
+                    class="img-fluid insta-img insta-left d-none d-md-block"
+                    alt=""
+                  />
+
+                  <!-- Right image (behind) -->
+                  <img
+                    src="assets/images/hero/WhatsApp Image 2025-12-17 at 11.13.06 PM.jpeg"
+                    class="img-fluid insta-img insta-right d-none d-md-block"
+                    alt=""
+                  />
+
+                  <!-- Center image (front) -->
+                  <img
+                    src="assets/images/hero/WhatsApp Image 2025-12-17 at 11.13.06 PM.jpeg"
+                    class="img-fluid insta-img insta-center"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- vertial section 03-->
+          <div class="swiper-slide">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="slide-content">
+                  <h5>
+                    <i class="bi bi-calendar2-week"></i> December 17, 2025
+                  </h5>
+                  <h2>Gen Z AI Mastery <br /><span>SEMINAR</span></h2>
+
+                  <ul class="featured-event">
+                    <li>Speaker <span>FARAZ HUSSAIN BURIRO</span></li>
+                    <!-- <li>
+                      <i class="bi bi-diagram-3"></i> <span>500</span> Seat
+                    </li> -->
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam eaque, fugit sint ducimus eum aut possimus natus
+                      expedita eveniet ratione inventore incidunt nostrum
+                      accusamus quas illo adipisci quibusdam? Sapiente, nobis.
+                    </li>
+                  </ul>
+
+                     <div class="slider-btns">
+                    <a href="/gallary" class="primary-btn-fill"
+                      >View Gallary</a
+                    >
+                    <!-- <a href="/gallary" class="primary-btn-outline"
+                      >View Gallery</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <!-- vertial section -->
+              <div class="col-lg-6 text-center">
+                <div
+                  class="slide-figure position-relative d-flex justify-content-center align-items-center insta-stack"
+                >
+                  <!-- Left image (behind) -->
+                  <img
+                    src="assets/images/hero/gen-z (6).jpeg"
+                    class="img-fluid insta-img insta-left d-none d-md-block"
+                    alt=""
+                  />
+
+                  <!-- Right image (behind) -->
+                  <img
+                    src="assets/images/hero/gen-z (6).jpeg"
+                    class="img-fluid insta-img insta-right d-none d-md-block"
+                    alt=""
+                  />
+
+                  <!-- Center image (front) -->
+                  <img
+                    src="assets/images/hero/gen-z (5).jpeg"
+                    class="img-fluid insta-img insta-center"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- horizontal section 04-->
+          <div class="swiper-slide">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="slide-content">
+                  <h5>
+                    <i class="bi bi-calendar2-week"></i> December 17, 2025
+                  </h5>
+                  <h2>Gen Z AI Mastery <br /><span>SEMINAR</span></h2>
+
+                  <ul class="featured-event">
+                    <li>Speaker <span>FARAZ HUSSAIN BURIRO</span></li>
+                    <!-- <li>
+                      <i class="bi bi-diagram-3"></i> <span>500</span> Seat
+                    </li> -->
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam eaque, fugit sint ducimus eum aut possimus natus
+                      expedita eveniet ratione inventore incidunt nostrum
+                      accusamus quas illo adipisci quibusdam? Sapiente, nobis.
+                    </li>
+                  </ul>
+
+                     <div class="slider-btns">
+                    <a href="/gallary" class="primary-btn-fill"
+                      >View Gallary</a
+                    >
+                    <!-- <a href="/gallary" class="primary-btn-outline"
+                      >View Gallery</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <div
+                  class="slide-figure position-relative d-lg-flex justify-content-center"
+                >
+                  <img
+                    src="assets/images/hero/gen-z (7).jpeg"
+                    alt=""
+                    class="img-fluid"
+                  />
+
+                  <div class="animated-shape">
+                    <img src="assets/images/shapes/hero-animi.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-arrows text-center d-lg-block d-none">
+      <div
+        class="swiper-button-next"
+        tabindex="0"
+        role="button"
+        aria-label="Next slide"
+      >
+        <i class="bi bi-chevron-up"></i>
+      </div>
+      <div class="hero-pagination d-block w-auto"></div>
+      <div
+        class="swiper-button-prev"
+        tabindex="0"
+        role="button"
+        aria-label="Previous slide"
+      >
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+  <!-- ===============  hero area end  =============== -->
+</div>
+
+<!-- ===============  Event Area start  =============== -->
+<div class="event-area gray-300">
+  <div class="container position-relative pt-110">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="background-title text-style-one">
+          <h2>EVENT</h2>
+        </div>
+        <div class="section-head">
+          <h5>Event</h5>
+          <h3>Popular Event</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="event-category-buttons d-flex justify-content-center">
+          <ul class="nav nav-pills mb-3" id="events-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-tab1"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-event1"
+                type="button"
+                role="tab"
+                aria-controls="pills-event1"
+                aria-selected="true"
+              >
+                Semester Expo
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-tab2"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-event2"
+                type="button"
+                role="tab"
+                aria-controls="pills-event2"
+                aria-selected="false"
+              >
+                Seminars
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-tab3"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-event3"
+                type="button"
+                role="tab"
+                aria-controls="pills-event3"
+                aria-selected="false"
+              >
+                Competitions
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-tab4"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-event4"
+                type="button"
+                role="tab"
+                aria-controls="pills-event4"
+                aria-selected="false"
+              >
+                Interviews
+              </button>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-tab5"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-event5"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-event5"
+                    aria-selected="false"
+                  >
+                    Marketing <span>10</span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-tab6"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-event6"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-event6"
+                    aria-selected="false"
+                  >
+                    Technology<span>10</span>
+                  </button>
+                </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="all-event-cards">
+          <div class="tab-content" id="events-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-event1"
+              role="tabpanel"
+              aria-labelledby="pills-tab1"
+            >
+              <div class="row">
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp animated"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md1.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Media companies need to better one then educate
+                          advertisers.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp animated"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md2.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >companies share strategies to Then capture audiences
+                          on mobile.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp animated"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md3.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp animated"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md4.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp animated"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md5.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp animated"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md6.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-event2"
+              role="tabpanel"
+              aria-labelledby="pills-tab2"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md1.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Media companies need to better one then educate
+                          advertisers.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md2.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >companies share strategies to Then capture audiences
+                          on mobile.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md3.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md4.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-event3"
+              role="tabpanel"
+              aria-labelledby="pills-tab3"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md1.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Media companies need to better one then educate
+                          advertisers.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md2.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >companies share strategies to Then capture audiences
+                          on mobile.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md3.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md4.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md5.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-event4"
+              role="tabpanel"
+              aria-labelledby="pills-tab4"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md1.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Media companies need to better one then educate
+                          advertisers.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md2.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >companies share strategies to Then capture audiences
+                          on mobile.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md3.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Proactive transformation requires embrace of
+                          technology.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-event5"
+              role="tabpanel"
+              aria-labelledby="pills-tab5"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md1.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >Media companies need to better one then educate
+                          advertisers.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md2.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >companies share strategies to Then capture audiences
+                          on mobile.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-event6"
+              role="tabpanel"
+              aria-labelledby="pills-tab6"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="event-card-md">
+                    <div class="event-thumb">
+                      <img src="assets/images/event/ev-md2.png" alt="" />
+                      <div class="event-lavel">
+                        <i class="bi bi-diagram-3"></i>
+                        <span>500 Seat</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <div class="event-info">
+                        <div class="event-date">
+                          <a href="#">
+                            <i class="bi bi-calendar2-week"></i> January 21,
+                            2021</a
+                          >
+                        </div>
+                        <div class="event-location">
+                          <a href="#">
+                            <i class="bi bi-geo-alt"></i> Broadw, New York</a
+                          >
+                        </div>
+                      </div>
+                      <h5 class="event-title">
+                        <a href="event-details.html"
+                          >companies share strategies to Then capture audiences
+                          on mobile.</a
+                        >
+                      </h5>
+
+                      <div class="event-bottom">
+                        <div class="event-readme">
+                          <a href="event-details.html">Book Now</a>
+                        </div>
+
+                        <div class="event-share-icons">
+                          <ul class="share-options">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                          <div class="share-btn">
+                            <i class="bi bi-share"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===============  Event Area end  =============== -->
+
+<!-- ===============  Recent schedule start  =============== -->
+<div class="recent-schedule-area gray-300">
+  <div class="container position-relative pt-110">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="background-title text-style-one">
+          <h2>SCHEDULE</h2>
+        </div>
+        <div class="section-head">
+          <h5>Schedule</h5>
+          <h3>Recent Event Schedule</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row position-relative">
+      <div class="col-lg-12 overflow-hidden">
+        <div class="swiper-container schedule-slider position-relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="schedule-wrapper">
+                <div class="event-date">
+                  <h3>30 Oct 2024</h3>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInLeft animated"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>10.00 AM - 11.30 PM</h4>
+                        <h5>Seminar Hall</h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-2.jpg"
+                            alt=""
+                            style="border-radius: 50%"
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Faraz Hussain Buriro</h4>
+                          <p>COCHAIRPERSON, PRO AI GLOBAL</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Co-Chairperson at PRO AI Global, leading innovation
+                          in artificial intelligence.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Faraz Hussain Buriro is the Co-Chairperson of PRO AI
+                        Global, where he plays a key role in guiding strategic
+                        initiatives, supporting innovation, and promoting the
+                        responsible growth of artificial intelligence across
+                        global platforms.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> AI Fundamentals
+                              </li>
+                              <li>
+                                <i class="bi bi-check"></i> Machine Learning
+                                Basics
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Data Analysis</li>
+                              <li>
+                                <i class="bi bi-check"></i> AI Model Development
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Real-World AI
+                                Applications
+                              </li>
+                              <li>
+                                <i class="bi bi-check"></i> Future of Artificial
+                                Intelligence
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInRight animated"
+                  data-wow-delay="300ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>11.30 AM - 12.30 PM</h4>
+                        <h5>Room No - <span>02</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-3.jpg"
+                            alt=""
+                            style="border-radius: 50%"
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Ammar Aftab</h4>
+                          <p>CHAIRPERSON, PRO AI GLOBAL</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#">
+                          Leading the Future of Artificial Intelligence &
+                          Innovation
+                        </a>
+                      </h3>
+                      <p class="schedule-discription">
+                        In this session, Ammar Aftab will share insights on the
+                        evolving role of artificial intelligence, leadership in
+                        tech-driven organizations, and how AI is shaping the
+                        future of industries worldwide.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Artificial
+                                Intelligence
+                              </li>
+                              <li>
+                                <i class="bi bi-check"></i> Future Technologies
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Leadership in AI
+                              </li>
+                              <li>
+                                <i class="bi bi-check"></i> Innovation Strategy
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Ethical AI</li>
+                              <li>
+                                <i class="bi bi-check"></i> Digital
+                                Transformation
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="single-schedule-card row wow fadeInLeft animated"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>01.00 AM - 01.30 PM</h4>
+                        <h5>Room No - <span>05</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right has-break">
+                      <h3 class="break-type">Lunch Time</h3>
+                    </div>
+                  </div>
+                </div> 
+                <div
+                  class="single-schedule-card row fadeInRight animated"
+                  data-wow-delay="500ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>02.00 PM - 03.00 PM</h4>
+                        <h5>Room No - <span>07</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-sm3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Gianna Abiga</h4>
+                          <p>Developing</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Nulla nisl tellus hendrerit nec dignissim pellentesqu
+                          posu in est Suspendisse bibendum.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Cras semper, massa vel aliquam luctus, eros odio tempor
+                        turpis, ac placerat metus tortor eget magna. Donec
+                        mattis posuere pharetra. Donec vestibulum ornare velit
+                        ut sollicitudin ut sollicitudin.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Color</li>
+                              <li><i class="bi bi-check"></i> Typhography</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Allingment</li>
+                              <li><i class="bi bi-check"></i> Development</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Graphic Design
+                              </li>
+                              <li><i class="bi bi-check"></i> Web Design</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInLeft animated"
+                  data-wow-delay="600ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>03.00 PM - 04.00 PM</h4>
+                        <h5>Room No - <span>01</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-sm4.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Michael Etha</h4>
+                          <p>Marketing</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Nulla nisl tellus hendrerit nec dignissim pellentesqu
+                          posu in est Suspendisse bibendum.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Cras semper, massa vel aliquam luctus, eros odio tempor
+                        turpis, ac placerat metus tortor eget magna. Donec
+                        mattis posuere pharetra. Donec vestibulum ornare velit
+                        ut sollicitudin ut sollicitudin.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Color</li>
+                              <li><i class="bi bi-check"></i> Typhography</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Allingment</li>
+                              <li><i class="bi bi-check"></i> Development</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Graphic Design
+                              </li>
+                              <li><i class="bi bi-check"></i> Web Design</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-progress-wrap">
+                  <div class="ticket-progressbar"></div>
+                  <h4>Total Events: <span>9+</span></h4>
+
+                  <!-- <div class="ticket-book-btn">
+                    <a href="event-details.html" class="primary-btn-fill"
+                      >Book Now</a
+                    >
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="schedule-wrapper">
+                <div class="event-date">
+                  <h3>01 Oct 2021</h3>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInLeft animated"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>10.00 AM - 11.30 PM</h4>
+                        <h5>Room No - <span>01</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-sm1.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>John Loganin</h4>
+                          <p>Marketing</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Nulla nisl tellus hendrerit nec dignissim pellentesqu
+                          posu in est Suspendisse bibendum.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Cras semper, massa vel aliquam luctus, eros odio tempor
+                        turpis, ac placerat metus tortor eget magna. Donec
+                        mattis posuere pharetra. Donec vestibulum ornare velit
+                        ut sollicitudin ut sollicitudin.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Color</li>
+                              <li><i class="bi bi-check"></i> Typhography</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Allingment</li>
+                              <li><i class="bi bi-check"></i> Development</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Graphic Design
+                              </li>
+                              <li><i class="bi bi-check"></i> Web Design</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInRight animated"
+                  data-wow-delay="300ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>11.30 AM - 12.30 PM</h4>
+                        <h5>Room No - <span>02</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-sm2.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Joseph John</h4>
+                          <p>Management</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Nulla nisl tellus hendrerit nec dignissim pellentesqu
+                          posu in est Suspendisse bibendum.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Cras semper, massa vel aliquam luctus, eros odio tempor
+                        turpis, ac placerat metus tortor eget magna. Donec
+                        mattis posuere pharetra. Donec vestibulum ornare velit
+                        ut sollicitudin ut sollicitudin.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Color</li>
+                              <li><i class="bi bi-check"></i> Typhography</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Allingment</li>
+                              <li><i class="bi bi-check"></i> Development</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Graphic Design
+                              </li>
+                              <li><i class="bi bi-check"></i> Web Design</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInLeft animated"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>01.00 AM - 01.30 PM</h4>
+                        <h5>Room No - <span>05</span></h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right has-break">
+                      <h3 class="break-type">Lunch Time</h3>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInRight animated"
+                  data-wow-delay="500ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>02.00 PM - 03.00 PM</h4>
+                        <h5>Room No - <span>07</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-sm3.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Gianna Abiga</h4>
+                          <p>Developing</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Nulla nisl tellus hendrerit nec dignissim pellentesqu
+                          posu in est Suspendisse bibendum.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Cras semper, massa vel aliquam luctus, eros odio tempor
+                        turpis, ac placerat metus tortor eget magna. Donec
+                        mattis posuere pharetra. Donec vestibulum ornare velit
+                        ut sollicitudin ut sollicitudin.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Color</li>
+                              <li><i class="bi bi-check"></i> Typhography</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Allingment</li>
+                              <li><i class="bi bi-check"></i> Development</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Graphic Design
+                              </li>
+                              <li><i class="bi bi-check"></i> Web Design</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="single-schedule-card row wow fadeInLeft animated"
+                  data-wow-delay="600ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div class="col-xl-4 col-lg-5 p-0">
+                    <div class="single-schedule-left">
+                      <div class="schedule-top">
+                        <h4>03.00 PM - 04.00 PM</h4>
+                        <h5>Room No - <span>01</span></h5>
+                      </div>
+                      <div class="schedule-bottom">
+                        <div class="speaker-image">
+                          <img
+                            src="assets/images/speaker/speaker-sm4.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="speaker-info">
+                          <h4>Michael Etha</h4>
+                          <p>Marketing</p>
+
+                          <ul class="speaker-social-links">
+                            <li>
+                              <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-8 col-lg-7 p-0">
+                    <div class="single-schedule-right">
+                      <h3 class="schedule-title">
+                        <a href="#"
+                          >Nulla nisl tellus hendrerit nec dignissim pellentesqu
+                          posu in est Suspendisse bibendum.</a
+                        >
+                      </h3>
+                      <p class="schedule-discription">
+                        Cras semper, massa vel aliquam luctus, eros odio tempor
+                        turpis, ac placerat metus tortor eget magna. Donec
+                        mattis posuere pharetra. Donec vestibulum ornare velit
+                        ut sollicitudin ut sollicitudin.
+                      </p>
+
+                      <div class="schedule-topics">
+                        <h5>Topic</h5>
+
+                        <div class="row">
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Color</li>
+                              <li><i class="bi bi-check"></i> Typhography</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li><i class="bi bi-check"></i> Allingment</li>
+                              <li><i class="bi bi-check"></i> Development</li>
+                            </ul>
+                          </div>
+                          <div class="col-md-4">
+                            <ul>
+                              <li>
+                                <i class="bi bi-check"></i> Graphic Design
+                              </li>
+                              <li><i class="bi bi-check"></i> Web Design</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ticket-progress-wrap">
+                  <div class="ticket-progressbar"></div>
+                  <h4>Available Seat: <span>390-500</span></h4>
+
+                  <div class="ticket-book-btn">
+                    <a href="event-details.html" class="primary-btn-fill"
+                      >Book Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule-arrows text-center d-lg-block d-none">
+        <div
+          class="schedule-button-next"
+          tabindex="0"
+          role="button"
+          aria-label="Next slide"
+        >
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div
+          class="schedule-button-prev"
+          tabindex="0"
+          role="button"
+          aria-label="Previous slide"
+        >
+          <i class="bi bi-chevron-left"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===============  Recent schedule end  =============== -->
+
+<!-- ===============  achievement area start  =============== -->
+<div class="achievement-area pt-120 gray-300">
+  <div class="achievement-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 com-sm-6">
+          <div class="single-achievement text-center">
+            <div class="achievement-icon">
+              <i class="fa fa-microphone fa-3x" style="color:#007bff;"></i>
+            </div>
+            <h2><span class="number">10</span> +</h2>
+            <h5>Speaker</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 com-sm-6">
+          <div class="single-achievement text-center">
+            <div class="achievement-icon">
+              <i class="fa fa-calendar-alt fa-3x" style="color:#007bff;"></i>
+            </div>
+            <h2><span class="number">2</span> +</h2>
+            <h5>Event</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 com-sm-6">
+          <div class="single-achievement text-center">
+            <div class="achievement-icon">
+              <i class="fa fa-clock fa-3x" style="color:#007bff;"></i>
+            </div>
+            <h2><span class="number">9</span>+</h2>
+            <h5>Schedule</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 com-sm-6">
+          <div class="single-achievement text-center">
+            <div class="achievement-icon">
+              <i class="fa fa-users fa-3x" style="color:#007bff;"></i>
+            </div>
+            <h2><span class="number">150</span>+</h2>
+            <h5>Participants</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===============  achievement area end  =============== -->
+
+<!-- ===============  Speakers area starts  =============== -->
+<div class="speakers-area gray-300">
+  <div class="container position-relative pt-110">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="background-title text-style-one">
+          <h2>Speaker</h2>
+        </div>
+        <div class="section-head">
+          <h5>Speaker</h5>
+          <h3>Talented Speaker</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper speaker-slider-two">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="speaker-card">
+            <div class="speaker-image sp_img">
+              <img src="assets/images/speaker/speaker-2.jpg" alt="" />
+              <ul class="speaker-social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/engr.farazhussain/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/engrfarazhussain/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="speaker-info">
+              <h5 class="speaker-name">
+                <a href="speaker-details.html">Faraz Hussain Buriro</a>
+              </h5>
+              <p>COCHAIRPERSON, PRO AI GLOBAL</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="speaker-card">
+            <div class="speaker-image sp_img">
+              <img src="assets/images/speaker/speaker-3.jpg" alt="" />
+              <ul class="speaker-social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/ammara.ailady/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ammaraaftab/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="speaker-info">
+              <h5 class="speaker-name">
+                <a href="speaker-details.html">Ammar Aftab</a>
+              </h5>
+              <p>CHAIRPERSON, PRO AI GLOBAL</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="speaker-card">
+            <div class="speaker-image sp_img">
+              <img src="assets/images/speaker/speaker-1.png" alt="" />
+              <ul class="speaker-social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="speaker-info">
+              <h5 class="speaker-name">
+                <a href="speaker-details.html">Jacob Logan</a>
+              </h5>
+              <p>Business Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="speaker-two-pagination d-lg-flex d-none"></div>
+    </div>
+  </div>
+</div>
+<!-- ===============  Speakers area end  =============== -->
+
+<!-- ===============  sponsor area start  =============== -->
+<div class="sponsor-area gray-300" id="sponsor-area">
+  <div class="container pt-110 position-relative">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="background-title text-style-one">
+          <h2>SPONSOR</h2>
+        </div>
+        <div class="section-head">
+          <h5>Sponsor</h5>
+          <h3>Official Sponsor</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="sponsors-tabs">
+          <ul class="nav nav-pills" id="sponsors-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                Wajahat Traders
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Server4sale
+              </button>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Diamond <span>10</span>
+                  </button>
+                </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <div class="swiper-container">
+              <div class="swiper-wrapper sponsor-slider">
+                <div class="swiper-slide row">
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/wajiz-logo.png" alt="" />
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-12.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-4.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-5.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-6.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-7.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-8.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-9.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-10.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-11.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-3.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-12.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <div class="swiper-container">
+              <div class="swiper-wrapper sponsor-slider">
+                <div class="swiper-slide row">
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img
+                        src="assets/images/sponsor/s4s-logo-full.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-8.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-9.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-10.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-11.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="sponsor-logo">
+                          <img
+                            src="assets/images/sponsor/sponsor-3.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          >
+            <div class="swiper-container">
+              <div class="swiper-wrapper sponsor-slider">
+                <div class="swiper-slide row">
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/sponsor-8.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/sponsor-9.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/sponsor-10.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/sponsor-11.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/sponsor-3.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="sponsor-logo">
+                      <img src="assets/images/sponsor/sponsor-12.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===============  sponsor area end  =============== -->
+
+<!-- ===============  testimonial area start  =============== -->
+<!-- <div class="testimonial-area">
+      <div class="container position-relative">
+        <div class="testimonial-wrapper position-relative">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="testimonial-info">
+                <div class="background-title text-style-two">
+                  <h2>Testimonial</h2>
+                </div>
+                <h5>Testimonial</h5>
+                <h3>What People Say About Eventlab.</h3>
+                <p>
+                  Cras semper, massa vel aliquam luctus, eros odio tempor
+                  turpis, ac placerat metus tortor eget magna. Donec mattis
+                  posuere pharetra. Donec vestibulum ornare velit ut
+                  sollicitudin ut sollicitudin.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="testimonial-slider-wrapper">
+                <div class="swiper testimonial-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testimonial-card">
+                        <div class="testimonial-shape">
+                          <img
+                            src="assets/images/shapes/testi-shape.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="testimonial-top">
+                          <div class="reviewer-image">
+                            <img
+                              src="assets/images/speaker/reviewer.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="reviewer-info">
+                            <div class="quote-icon">
+                              <img
+                                src="assets/images/icons/qoute-icon.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="reviewer-name">Scarlett Eleanor</h3>
+                            <p>Marketing</p>
+                          </div>
+                        </div>
+
+                        <div class="review-texts">
+                          <p>
+                            Cras semper, massa vel aliquam luctus, eros odio
+                            tempor turpis, ac placerat metus tortor eget magna.
+                            Donec mattis posuere pharetra. Donec vestibulum
+                            ornare velit ut.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-card">
+                        <div class="testimonial-shape">
+                          <img
+                            src="assets/images/shapes/testi-shape.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="testimonial-top">
+                          <div class="reviewer-image">
+                            <img
+                              src="assets/images/speaker/reviewer.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="reviewer-info">
+                            <div class="quote-icon">
+                              <img
+                                src="assets/images/icons/qoute-icon.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="reviewer-name">Scarlett Eleanor</h3>
+                            <p>Marketing</p>
+                          </div>
+                        </div>
+
+                        <div class="review-texts">
+                          <p>
+                            Cras semper, massa vel aliquam luctus, eros odio
+                            tempor turpis, ac placerat metus tortor eget magna.
+                            Donec mattis posuere pharetra. Donec vestibulum
+                            ornare velit ut.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-card">
+                        <div class="testimonial-shape">
+                          <img
+                            src="assets/images/shapes/testi-shape.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="testimonial-top">
+                          <div class="reviewer-image">
+                            <img
+                              src="assets/images/speaker/reviewer.png"
+                              alt=""
+                            />
+                          </div>
+
+                          <div class="reviewer-info">
+                            <div class="quote-icon">
+                              <img
+                                src="assets/images/icons/qoute-icon.png"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="reviewer-name">Scarlett Eleanor</h3>
+                            <p>Marketing</p>
+                          </div>
+                        </div>
+
+                        <div class="review-texts">
+                          <p>
+                            Cras semper, massa vel aliquam luctus, eros odio
+                            tempor turpis, ac placerat metus tortor eget magna.
+                            Donec mattis posuere pharetra. Donec vestibulum
+                            ornare velit ut.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="testi-arrows text-center d-lg-flex d-none">
+                  <div
+                    class="testi-button-prev"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Previous slide"
+                  >
+                    <i class="bi bi-chevron-left"></i>
+                  </div>
+                  <div
+                    class="testi-button-next"
+                    tabindex="0"
+                    role="button"
+                    aria-label="Next slide"
+                  >
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- ===============  testimonial area end  =============== -->
+
+<!-- ===============  Pricing area start =============== -->
+<!-- <div class="pricing-area gray-300">
+      <div class="container pt-110 position-relative">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="background-title text-style-one">
+              <h2>Ticket Plan</h2>
+            </div>
+            <div class="section-head">
+              <h5>Ticket Plan</h5>
+              <h3>Get Sponsor Ticket</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 wow fadeInLeft animated"
+            data-wow-delay="200ms"
+            data-wow-duration="1500ms"
+          >
+            <div class="pricing-card">
+              <div class="pricing-card-top">
+                <h5 class="plan-status">Silver</h5>
+                <h3 class="plan-price"><span>$</span> 100</h3>
+                <div class="plan-icon">
+                  <img src="assets/images/icons/silverl-fa.png" alt="" />
+                </div>
+              </div>
+              <div class="pricing-features">
+                <div class="ticket-availability">
+                  <h5>Available Tickets</h5>
+                  <h4>270 / <span>500</span></h4>
+                </div>
+
+                <div class="feature-list">
+                  <ul>
+                    <li class="tick">
+                      <i class="bi bi-check2"></i> Conference Ticket
+                    </li>
+                    <li><i class="bi bi-x"></i> Free Certificate</li>
+                    <li><i class="bi bi-x"></i> Free Lunch & Coffe</li>
+                  </ul>
+                </div>
+
+                <div class="purchase-btn">
+                  <a href="#">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-card active">
+              <div class="pricing-card-top">
+                <div class="pricing-card-lavel"><span>10%</span> Off</div>
+                <h5 class="plan-status">Gold</h5>
+                <h3 class="plan-price"><span>$</span> 120</h3>
+                <div class="plan-icon">
+                  <img src="assets/images/icons/gold-fa.png" alt="" />
+                </div>
+              </div>
+              <div class="pricing-features">
+                <div class="ticket-availability">
+                  <h5>Available Tickets</h5>
+                  <h4>300 / <span>500</span></h4>
+                </div>
+
+                <div class="feature-list">
+                  <ul>
+                    <li class="tick">
+                      <i class="bi bi-check2"></i> Conference Ticket
+                    </li>
+                    <li class="tick">
+                      <i class="bi bi-check2"></i> Free Certificate
+                    </li>
+                    <li><i class="bi bi-x"></i> Free Lunch & Coffe</li>
+                  </ul>
+                </div>
+
+                <div class="purchase-btn">
+                  <a href="#">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 wow fadeInRight animated"
+            data-wow-delay="200ms"
+            data-wow-duration="1500ms"
+          >
+            <div class="pricing-card">
+              <div class="pricing-card-top">
+                <h5 class="plan-status">Silver</h5>
+                <h3 class="plan-price"><span>$</span> 150</h3>
+                <div class="plan-icon">
+                  <img src="assets/images/icons/diamond-fa.png" alt="" />
+                </div>
+              </div>
+              <div class="pricing-features">
+                <div class="ticket-availability">
+                  <h5>Available Tickets</h5>
+                  <h4>270 / <span>500</span></h4>
+                </div>
+
+                <div class="feature-list">
+                  <ul>
+                    <li class="tick">
+                      <i class="bi bi-check2"></i> Conference Ticket
+                    </li>
+                    <li class="tick">
+                      <i class="bi bi-check2"></i> Free Certificate
+                    </li>
+                    <li class="tick">
+                      <i class="bi bi-check2"></i> Free Lunch & Coffe
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="purchase-btn">
+                  <a href="#">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- ===============  Pricing area end =============== -->
+
+<!-- ===============  Event Countsown start  =============== -->
+<!-- <div class="event-countdown-outer pt-120 gray-300">
+      <div class="event-countdown">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="event-countdown-head">
+                <h2>Next Event</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="timer">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="countdown-box">
+                <div class="countdown-line-shape d-lg-block d-none">
+                  <img src="assets/images/shapes/countdown-vactor.png" alt="" />
+                </div>
+                <h3 id="days">05</h3>
+                <h5>Days</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="countdown-box">
+                <div class="countdown-line-shape d-lg-block d-none">
+                  <img src="assets/images/shapes/countdown-vactor.png" alt="" />
+                </div>
+                <h3 id="hours">05</h3>
+                <h5>Hour</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="countdown-box">
+                <div class="countdown-line-shape d-lg-block d-none">
+                  <img src="assets/images/shapes/countdown-vactor.png" alt="" />
+                </div>
+                <h3 id="miniutes">05</h3>
+                <h5>Miniute</h5>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="countdown-box">
+                <h3 id="seconds">05</h3>
+                <h5>Secoend</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- ===============  Event Countsown end  =============== -->
+
+<!-- ===============  Blog area start  =============== -->
+<div class="blog-area gray-300">
+  <div class="container position-relative pt-110">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="background-title text-style-one">
+          <h2>LATEST Blog</h2>
+        </div>
+        <div class="section-head">
+          <h5>Blog</h5>
+          <h3>Latest News</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 pt-24">
+        <div
+          class="blog-category-wrap wow fadeInLeft animated"
+          data-wow-delay="200ms"
+          data-wow-duration="1500ms"
+        >
+          <ul class="categoryes">
+            <li><a href="blog.html">Business</a></li>
+            <li><a href="blog.html">Tecnology</a></li>
+            <li><a href="blog.html">Sport</a></li>
+            <li><a href="blog.html">Sport</a></li>
+            <li><a href="blog.html">Business</a></li>
+            <li><a href="blog.html">Tecnology</a></li>
+            <li><a href="blog.html">photography</a></li>
+            <li><a href="blog.html">Website</a></li>
+            <li><a href="blog.html">Corporate</a></li>
+            <li><a href="blog.html">Web Design</a></li>
+            <li><a href="blog.html">Development</a></li>
+          </ul>
+
+          <div class="view-blog-btn">
+            <a href="blog.html">View All Blog</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 wow fadeInUp animated"
+        data-wow-delay="200ms"
+        data-wow-duration="1500ms"
+      >
+        <div class="blog-card-md">
+          <div class="blog-thumb">
+            <a href="blog-details.html"
+              ><img src="assets/images/blog/b-md1.png" alt=""
+            /></a>
+
+            <div class="blog-tags">
+              <a href="blog.html">Business</a>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4 class="blog-title">
+              <a href="blog-details.html"
+                >Vestibulum nec porta erat. In in lobo turpis Suspendisse
+                rtis.</a
+              >
+            </h4>
+            <div class="blog-bottom">
+              <div class="blog-date">
+                <p>
+                  <i class="bi bi-calendar2-week"></i>
+                  <span>02 Septembar, 2021</span>
+                </p>
+              </div>
+              <div class="readme-btn">
+                <a href="blog-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 wow fadeInUp animated"
+        data-wow-delay="200ms"
+        data-wow-duration="1500ms"
+      >
+        <div class="blog-card-md">
+          <div class="blog-thumb">
+            <a href="blog-details.html"
+              ><img src="assets/images/blog/b-md2.png" alt=""
+            /></a>
+
+            <div class="blog-tags">
+              <a href="blog.html">Business</a>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h4 class="blog-title">
+              <a href="blog-details.html"
+                >Duis tincidunt ultrices nibh non ullamcorper Sed nibh leo.</a
+              >
+            </h4>
+            <div class="blog-bottom">
+              <div class="blog-date">
+                <p>
+                  <i class="bi bi-calendar2-week"></i>
+                  <span>02 Septembar, 2021</span>
+                </p>
+              </div>
+              <div class="readme-btn">
+                <a href="blog-details.html">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ===============  Blog area end  =============== -->
