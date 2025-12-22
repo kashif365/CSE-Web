@@ -15,7 +15,7 @@ app.set("layout", "layouts/main");
 app.use(express.static(path.join(__dirname, "public")));
 
 // favicon fix (prevents 502)
-app.get("/favicon.ico", (req, res) => res.sendStatus(204));
+// app.get("/favicon.ico", (req, res) => res.sendStatus(204));
 
 // routes
 app.get("/", (req, res) => {
