@@ -1,9 +1,22 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const expressLayouts = require("express-ejs-layouts");
+const connectDB = require("./config/database");
 
 const app = express();
 
+// Health check endpoint
+app.get("/health", (req, res) => {
+  res.json({ status: "OK", timestamp: new Date().toISOString() });
+});
+
+// Connect to Database (optional - only if MONGODB_URI is provided)
+if (process.env.MONGODB_URI) {
+  connectDB().catch((err) => {
+    console.warn("MongoDB connection failed, continuing without database:", err.message);
+  });
+}
 // view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
